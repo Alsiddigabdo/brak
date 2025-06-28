@@ -2,13 +2,13 @@ const mysql = require('mysql2');
 const util = require('util');
 require('dotenv').config(); // تحميل المتغيرات من .env
 
-// إعداد الاتصال بقاعدة البيانات باستخدام المتغيرات البيئية
+// إعداد الاتصال بقاعدة البيانات باستخدام البيانات المقدمة
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'mydb',
-  port: 3306
+  host: 'sql.freedb.tech',
+  user: 'freedb_textai',
+  password: 'j?SB9P9gytSk3*V',
+  database: 'freedb_textai',
+  port: 3306 // هذا هو المنفذ الافتراضي لـ MySQL، لا تغيّره إلا لو تم تحديد غيره
 });
 
 db.connect((err) => {
